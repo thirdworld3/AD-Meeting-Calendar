@@ -50,15 +50,9 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-
-Description of the project in details.
+Meeting Calendar Project
 
 ### Key Components
-
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
 
 - Authentication & Authorization
 - CRUD Operations for Invetory System
