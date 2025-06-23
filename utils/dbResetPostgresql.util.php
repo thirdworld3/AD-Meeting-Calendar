@@ -26,4 +26,8 @@ if ($sql === false) {
 }
 $pdo->exec($sql);
 
+echo "Truncating tables…\n";
+foreach (['project_users', 'tasks', 'projects', 'users'] as $table) {
+  $pdo->exec("TRUNCATE TABLE {$table} RESTART IDENTITY CASCADE;");
+}
 // (You can now repeat for the other model files)
