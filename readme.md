@@ -91,7 +91,7 @@ Meeting Calendar Project
 10. File Structure to follow below.
 
 ```
-AD-ProjectName
+AD-Meeting-Calendar
 └─ assets
 |   └─ css
 |   |   └─ name.css
