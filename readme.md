@@ -9,10 +9,7 @@
   </a>
   <h3 align="center">AD-Meeting Calendar</h3>
 </div>
-<!-- TODO: Make a short description -->
-<div align="center">
-  Short Description. (Optional)
-</div>
+
 
 <br />
 
