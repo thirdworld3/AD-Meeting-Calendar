@@ -16,13 +16,43 @@ $pdo = new PDO($dsn, $_ENV['PG_USER'], $_ENV['PG_PASS'], [
   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
 ]);
 
-// Step 4: Apply schema from SQL files
+// USERS
 echo "Applying schema from database/users.model.sql…\n";
 $sql = file_get_contents('database/users.model.sql');
 if ($sql === false) {
   throw new RuntimeException("Could not read database/users.model.sql");
 } else {
   echo "Creation Success from the database/users.model.sql\n";
+}
+$pdo->exec($sql);
+
+// PROJECTS
+echo "Applying schema from database/projects.model.sql…\n";
+$sql = file_get_contents('database/projects.model.sql');
+if ($sql === false) {
+  throw new RuntimeException("Could not read database/projects.model.sql");
+} else {
+  echo "Creation Success from the database/projects.model.sql\n";
+}
+$pdo->exec($sql);
+
+// PROJECT_USERS
+echo "Applying schema from database/project_users.model.sql…\n";
+$sql = file_get_contents('database/project_users.model.sql');
+if ($sql === false) {
+  throw new RuntimeException("Could not read database/project_users.model.sql");
+} else {
+  echo "Creation Success from the database/project_users.model.sql\n";
+}
+$pdo->exec($sql);
+
+// TASKS
+echo "Applying schema from database/tasks.model.sql…\n";
+$sql = file_get_contents('database/tasks.model.sql');
+if ($sql === false) {
+  throw new RuntimeException("Could not read database/tasks.model.sql");
+} else {
+  echo "Creation Success from the database/tasks.model.sql\n";
 }
 $pdo->exec($sql);
 
