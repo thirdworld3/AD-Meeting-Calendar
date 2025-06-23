@@ -94,39 +94,69 @@ Meeting Calendar Project
 AD-Meeting-Calendar
 └─ assets
 |   └─ css
-|   |   └─ name.css
+|   |   └─ example.css
 |   └─ img
-|   |   └─ name.jpeg/.jpg/.webp/.png
+|   |   └─ arcalogo.png
 |   └─ js
-|       └─ name.js
+|       └─ example.js
 └─ components
-|   └─ name.component.php
+|   └─ componentGroup
 |   └─ templates
-|      └─ name.component.php
+|      └─ example.component.php
+|
+└─ database
+|   └─ nameOfModels.model.sql
+|   └─ project_users.model.sql
+|   └─ projects.model.sql
+|   └─ tasks.model.sql
+|   └─ users.model.sql
+|
 └─ handlers
-|   └─ name.handler.php
+|   └─ example.handler.php
+|   └─ mongodbChecker.handler.php
+|   └─ postgreChecker.handler.php
 └─ layout
-|   └─ name.layout.php
+|   └─ example.layout.php
 └─ pages
-|  └─ pageName
+|  └─ExamplePage
 |     └─ assets
 |     |  └─ css
-|     |  |  └─ name.css
+|     |  |  └─ example.css
 |     |  └─ img
-|     |  |  └─ name.jpeg/.jpg/.webp/.png
+|     |  |  └─ nyebe_white.png
 |     |  └─ js
-|     |     └─ name.js
+|     |     └─ example.js
 |     └─ index.php
 └─ staticData
-|  └─ name.staticdata.php
+|  └─ example.staticdata.php
 └─ utils
-|   └─ name.utils.php
+|   └─ example.utils.php
+|   └─ dbResetPostgresql.util.php
+|   └─ dbSeedPostgresql.util.php
+|   └─ envSetter.util.php
+|   └─ htmlEscape.util.php
 └─ vendor
+|   └─ autoload.php
+|     └─ composer
+|         └─ autoload_classmap.php
+|         └─ autoload_files.php
+|         └─ autoload_namespaces.php
+|         └─ autoload_psr4.php
+|         └─ autoload_real.php
+|         └─ autoload_static.php
+|         └─ ClassLoader.php
+|         └─ installed.json
+|         └─ installed.php
+|         └─ InstalledVersions.php
+|         └─ LICENSE
+|         └─ platform_check.php
 └─ .gitignore
 └─ bootstrap.php
 └─ composer.json
 └─ composer.lock
+└─ Dockerfile
 └─ index.php
+└─ README.Docker.md
 └─ readme.md
 └─ router.php
 ```
@@ -134,11 +164,6 @@ AD-Meeting-Calendar
 
 ## Resources
 
-<!-- TODO: Add References -->
-
 | Title        | Purpose                                                                       | Link          |
 | ------------ | ----------------------------------------------------------------------------- | ------------- |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| ChatGPT | Coding, Structure, and detailed guidance. | https://chatgpt.com/ |
