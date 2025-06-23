@@ -8,11 +8,3 @@ CREATE TABLE IF NOT EXISTS users (
     group_name VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-echo "Applying schema from database/users.model.sql…\n";
-$sql = file_get_contents('database/users.model.sql');
-if ($sql === false) {
-  throw new RuntimeException("Could not read database/users.model.sql");
-} else {
-  echo "Creation Success from the database/users.model.sql\n";
-}
-$pdo->exec($sql);
