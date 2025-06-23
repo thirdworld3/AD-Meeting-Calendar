@@ -1,0 +1,16 @@
+{
+    "name": "felipe/ad-meeting-calendar",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Felipe\\AdMeetingCalendar\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "iFelipe",
+            "email": "browicked@gmail.com"
+        }
+    ],
+    "require": {}
+}
