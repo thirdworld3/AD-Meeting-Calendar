@@ -16,10 +16,10 @@ if ($_ENV['SEED_ENABLED'] !== 'true') {
     echo "Seeder is disabled. Skipping...\n";
     exit;
   }
-  
+
   // Seed the users table
   echo "Seeding users table...\n";
-  
+
   $pdo->exec("
     INSERT INTO users (username, email, password, full_name, role, group_name)
     VALUES 
@@ -27,5 +27,5 @@ if ($_ENV['SEED_ENABLED'] !== 'true') {
       ('felipe', 'felipe@example.com', 'felipepass', 'Felipe Jimenez', 'user', 'alpha'),
       ('ian', 'ian@example.com', 'ianpass', 'Ian Ramirez', 'user', 'beta');
   ");
-  
+
   echo "✅ Users seeded successfully.\n";
